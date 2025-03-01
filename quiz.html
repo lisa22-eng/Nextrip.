@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Nextrip</title>
+    <link rel="stylesheet" href="quiz.css/style.css">
+</head>
+<body>
+    <div class="quizz-p">
+        <h1>Trouvez votre destination idéale</h1>
+    </div>
+    <div class="logo_container">
+        <img src="quiz.css/logo_1.jpg" alt="logo Nextrip" class="logo">
+    </div> 
+    <nav class="barre_navigation-p">
+        <ul>
+            <li><a href="file:///C:/Users/PC/Desktop/ProjetTFE/accueil.nextrip/nextrip.html#">Accueil</a></li>
+            <li><a href="file:///C:/Users/PC/Desktop/ProjetTFE/destination.nextrip/destination.html">Quelques Destinations</a></li> 
+            <li><a href="file:///C:/Users/PC/Desktop/ProjetTFE/quiz.nextrip/quiz.html">Quiz</a></li> 
+        </ul>
+    </nav>
+
+
+
+    <div class="quiz-container">
+        <h1>Bienvenue sur le quiz Nextrip</h1>
+        <h2>Répondez aux questions pour trouver votre destination idéale.</h2>
+        <button onclick="startQuiz()">Commencer</button>
+    </div>
+
+    <script>
+        function startQuiz() {
+            localStorage.clear(); // Réinitialise les réponses précédentes
+            window.location.href = "question1.html";
+        }
+    </script>
+</body>
+</html>
